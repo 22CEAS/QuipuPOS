@@ -1441,7 +1441,7 @@ Public Class p_ventas_00
                 End If
                 nrofactura = mfactura.maxfactura_det
                 'mfactura.insertar_detObs(nroOperacion, nrofactura, nroIngreso, cod_art, cant, precio, igv, comi_v, comi_jv, obs, 1, 0)
-                mfactura.insertar_factura_det(nroOperacion, nrofactura, 0, cod_art, cant, precio, pIGV, obs, imptotal, impsubtotal, impigv, 1, pCuentaUser, pFechaSystem)
+                mfactura.insertar_factura_det(nroOperacion, nrofactura, 0, cod_art, cant, precio, pIGV, obs, imptotal, impsubtotal, impigv, 0, 1, pCuentaUser, pFechaSystem)
             End If
         Next
 
@@ -1468,7 +1468,7 @@ Public Class p_ventas_00
             End If
             nrofactura = mfactura.maxfactura_det
             'mfactura.insertar_detObs(nroOperacion, nrofactura, nroIngreso, cod_art, cant, precio, igv, comi_v, comi_jv, obs, 1, 0)
-            mfactura.insertar_factura_det(nroOperacion, nrofactura, 0, cod_art, cant, precio, pIGV, obs, imptotal, impsubtotal, impigv, 1, pCuentaUser, pFechaSystem)
+            mfactura.insertar_factura_det(nroOperacion, nrofactura, 0, cod_art, cant, precio, pIGV, obs, imptotal, impsubtotal, impigv, 0, 1, pCuentaUser, pFechaSystem)
 
         Next
 

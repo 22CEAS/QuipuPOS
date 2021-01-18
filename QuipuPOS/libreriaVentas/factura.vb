@@ -407,6 +407,7 @@ Public Class factura
                                 ByVal imptotal As Decimal,
                                 ByVal impsubtotal As Decimal,
                                 ByVal impigv As Decimal,
+                                ByVal impdescuento As Decimal,
                                 ByVal nAux As Integer,
                                 ByVal usuario As String,
                                 ByVal fecha As DateTime
@@ -416,9 +417,9 @@ Public Class factura
         com.Connection = clConex
         Dim sql As String, result As Integer
         Dim mfecha1 As String = fecha.ToString("yyyy-MM-dd hh:mm:ss")
-        sql = "Insert Into factura_det(operacion,salida,ingreso,cod_art,imp_subtotal,imp_total,imp_igv,cant,precio,igv,descripcion,nAux,usu_ins,usu_mod,fec_ins,fec_mod)" &
+        sql = "Insert Into factura_det(operacion,salida,ingreso,cod_art,imp_subtotal,imp_total,imp_igv,imp_descuento,cant,precio,igv,descripcion,nAux,usu_ins,usu_mod,fec_ins,fec_mod)" &
             "values(" &
-            nro_ope & "," & salida & "," & ingreso & ",'" & cod_art & "'," & impsubtotal & "," & imptotal & "," & impigv & "," & cant & "," & precio & "," & igv & ",'" & obs & "'," & nAux & ",'" & usuario & "','" & usuario & "','" & mfecha1 & "','" & mfecha1 & "')"
+            nro_ope & "," & salida & "," & ingreso & ",'" & cod_art & "'," & impsubtotal & "," & imptotal & "," & impigv & "," & impdescuento & "," & cant & "," & precio & "," & igv & ",'" & obs & "'," & nAux & ",'" & usuario & "','" & usuario & "','" & mfecha1 & "','" & mfecha1 & "')"
         com.CommandText = sql
         com.CommandTimeout = 800
         result = com.ExecuteNonQuery
