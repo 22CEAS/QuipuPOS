@@ -12,7 +12,7 @@ Imports System.Drawing.Printing
 Imports ThoughtWorks.QRCode
 Imports ThoughtWorks.QRCode.Codec
 Imports ThoughtWorks.QRCode.Codec.Data
-
+Imports System.ComponentModel
 
 Public Class p_ventas_00
     'Declare Function SetDefaultPrinter Lib "winspool.drv" Alias "SetDefaultPrinterA" (ByVal pszPrinter As String) As Boolean
@@ -2545,7 +2545,7 @@ Public Class p_ventas_00
 
 
         nroOperacion = 0
-        txtcod_mesa.Text = ""
+        'txtcod_mesa.Text = ""
         fcod_vend = ""
         fcod_clie = ""
         tipoProceso = "A"
@@ -3030,35 +3030,9 @@ Public Class p_ventas_00
         End If
     End Sub
 
-    Private Sub txtcod_mesa_DoubleClick(sender As Object, e As EventArgs)
-        ' Principal.CloseModalPanel(Me, DevComponents.DotNetBar.Controls.eSlideSide.Left)
-        If FormularioActivo("mesas") = False Then
-            mesas.Show()
-        End If
-    End Sub
 
-    Private Sub txtcod_mesa_KeyPress(sender As Object, e As KeyPressEventArgs)
-        If e.KeyChar = ChrW(Keys.Enter) Then
-            e.Handled = True
-            SendKeys.Send("{TAB}")
-        End If
 
-        If Not Char.IsNumber(e.KeyChar) And Not (e.KeyChar = ChrW(Keys.Back)) Then
-            e.KeyChar = ""
-        End If
 
-    End Sub
-
-    Private Sub txtcod_mesa_LostFocus(sender As Object, e As EventArgs)
-        If Microsoft.VisualBasic.Len(txtcod_mesa.Text) > 0 Then
-            txtcod_mesa.Text = Microsoft.VisualBasic.Right("000" & txtcod_mesa.Text, 3)
-        End If
-        'general.saleTextoProceso(txtcod_mesa)
-    End Sub
-
-    Private Sub txtcod_mesa_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs)
-        ubicarmesa(txtcod_mesa.Text)
-    End Sub
     Sub actualizamesa(ByVal cod_mesa As String)
         ubicarmesa(cod_mesa)
     End Sub
@@ -3217,36 +3191,6 @@ Public Class p_ventas_00
     End Sub
 
 
-    Private Sub txtcod_mesa_DoubleClick1(sender As Object, e As EventArgs)
-        ' Principal.CloseModalPanel(Me, DevComponents.DotNetBar.Controls.eSlideSide.Left)
-        If FormularioActivo("mesas") = False Then
-            mesas.Show()
-        End If
-    End Sub
-
-    Private Sub txtcod_mesa_KeyPress1(sender As Object, e As KeyPressEventArgs)
-        If e.KeyChar = ChrW(Keys.Enter) Then
-            e.Handled = True
-            SendKeys.Send("{TAB}")
-        End If
-
-        If Not Char.IsNumber(e.KeyChar) And Not (e.KeyChar = ChrW(Keys.Back)) Then
-            e.KeyChar = ""
-        End If
-
-    End Sub
-
-    Private Sub txtcod_mesa_LostFocus1(sender As Object, e As EventArgs)
-        If Microsoft.VisualBasic.Len(txtcod_mesa.Text) > 0 Then
-            txtcod_mesa.Text = Microsoft.VisualBasic.Right("000" & txtcod_mesa.Text, 3)
-        End If
-    End Sub
-
-
-
-    Private Sub txtcod_mesa_Validating1(sender As Object, e As System.ComponentModel.CancelEventArgs)
-        ubicarmesa(txtcod_mesa.Text)
-    End Sub
 
 
     Private Sub dataPago_DoubleClick(sender As Object, e As EventArgs) Handles datapago.DoubleClick
@@ -3344,11 +3288,7 @@ Public Class p_ventas_00
     End Sub
 
 
-    Private Sub txtcod_mesa_DoubleClick2(sender As Object, e As EventArgs) Handles txtcod_mesa.DoubleClick
-        If FormularioActivo("mesas") = False Then
-            mesas.Show()
-        End If
-    End Sub
+
 
     Private Sub ButtonX2_Click(sender As Object, e As EventArgs)
         If FormularioActivo("c_ventas") = False Then
@@ -3434,28 +3374,7 @@ Public Class p_ventas_00
         GeneraNumDocumento(cboDocumento.SelectedValue)
     End Sub
 
-    Private Sub cboCliente_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboCliente.SelectedIndexChanged
 
-    End Sub
-
-    Private Sub txtcod_mesa_KeyPress2(sender As Object, e As KeyPressEventArgs) Handles txtcod_mesa.KeyPress
-        If e.KeyChar = ChrW(Keys.Enter) Then
-            e.Handled = True
-            SendKeys.Send("{TAB}")
-        End If
-
-        If Not Char.IsNumber(e.KeyChar) And Not (e.KeyChar = ChrW(Keys.Back)) Then
-            e.KeyChar = ""
-        End If
-    End Sub
-
-
-
-    Private Sub txtcod_mesa_LostFocus2(sender As Object, e As EventArgs) Handles txtcod_mesa.LostFocus
-        If Microsoft.VisualBasic.Len(txtcod_mesa.Text) > 0 Then
-            txtcod_mesa.Text = Microsoft.VisualBasic.Right("000" & txtcod_mesa.Text, 3)
-        End If
-    End Sub
 
     Private Sub txtinput_TextChanged(sender As Object, e As EventArgs) Handles txtinput.TextChanged
         If (Len(txtinput.Text) >= 8 And IsNumeric(txtinput.Text)) Then
@@ -3470,33 +3389,8 @@ Public Class p_ventas_00
 
     End Sub
 
-    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
 
-    End Sub
 
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
-    End Sub
-
-    Private Sub lbltipCambio_Click(sender As Object, e As EventArgs) Handles lbltipCambio.Click
-
-    End Sub
-
-    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
-
-    End Sub
-
-    'Private Sub txtinput_TextChanged(sender As Object, e As EventArgs) Handles txtinput.TextChanged
-    '    mostraritems(2, "")
-    'End Sub
-
-    'Private Sub txtinput_KeyDown(sender As Object, e As KeyEventArgs) Handles txtinput.KeyDown
-    '    If e.KeyCode = Keys.Enter Then
-    '        txtinput.Text = txtinput.Text.Replace(vbCrLf, "")
-    '        mostraritems(2, "")
-    '        txtinput.Text = ""
-    '    End If
-    'End Sub
     Private Sub txtinput_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtinput.KeyPress
         If e.KeyChar = ChrW(Keys.Enter) Then
             e.Handled = True
@@ -3505,10 +3399,6 @@ Public Class p_ventas_00
         End If
     End Sub
 
-
-    Private Sub txtcod_mesa_Validating2(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles txtcod_mesa.Validating
-        ubicarmesa(txtcod_mesa.Text)
-    End Sub
 
     Private Sub cboCliente_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cboCliente.KeyPress
         If e.KeyChar = ChrW(Keys.Enter) Then
@@ -3648,4 +3538,30 @@ Public Class p_ventas_00
 
     End Sub
 
+    Private Sub txtcod_mesa_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtcod_mesa.KeyPress
+        If e.KeyChar = ChrW(Keys.Enter) Then
+            e.Handled = True
+            SendKeys.Send("{TAB}")
+        End If
+
+        If Not Char.IsNumber(e.KeyChar) And Not (e.KeyChar = ChrW(Keys.Back)) Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub txtcod_mesa_LostFocus(sender As Object, e As EventArgs) Handles txtcod_mesa.LostFocus
+        If Microsoft.VisualBasic.Len(txtcod_mesa.Text) > 0 Then
+            txtcod_mesa.Text = Microsoft.VisualBasic.Right("000" & txtcod_mesa.Text, 3)
+        End If
+    End Sub
+
+    Private Sub txtcod_mesa_Validating(sender As Object, e As CancelEventArgs) Handles txtcod_mesa.Validating
+        ubicarmesa(txtcod_mesa.Text)
+    End Sub
+
+    Private Sub txtcod_mesa_DoubleClick(sender As Object, e As EventArgs) Handles txtcod_mesa.DoubleClick
+        If FormularioActivo("mesas") = False Then
+            mesas.Show()
+        End If
+    End Sub
 End Class

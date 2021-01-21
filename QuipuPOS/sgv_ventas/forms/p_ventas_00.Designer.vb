@@ -113,14 +113,14 @@ Partial Class p_ventas_00
         Me.TableLayoutPanel1.Controls.Add(Me.GroupBox2, 1, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 4
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.119497!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.94969!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.02516!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.22013!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1290, 804)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1290, 820)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'GroupBox1
@@ -134,10 +134,10 @@ Partial Class p_ventas_00
         Me.GroupBox1.Controls.Add(Me.cmdCerrar)
         Me.GroupBox1.Controls.Add(Me.cmdInicio)
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupBox1.Location = New System.Drawing.Point(687, 6)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Location = New System.Drawing.Point(687, 7)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(585, 63)
         Me.GroupBox1.TabIndex = 7476
         Me.GroupBox1.TabStop = False
@@ -150,7 +150,7 @@ Partial Class p_ventas_00
         Me.chk_vrapida.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chk_vrapida.ForeColor = System.Drawing.Color.MediumBlue
         Me.chk_vrapida.Location = New System.Drawing.Point(412, 18)
-        Me.chk_vrapida.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chk_vrapida.Margin = New System.Windows.Forms.Padding(4)
         Me.chk_vrapida.Name = "chk_vrapida"
         Me.chk_vrapida.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.chk_vrapida.Size = New System.Drawing.Size(165, 38)
@@ -167,7 +167,7 @@ Partial Class p_ventas_00
         Me.cmdComanda.Image = CType(resources.GetObject("cmdComanda.Image"), System.Drawing.Image)
         Me.cmdComanda.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
         Me.cmdComanda.Location = New System.Drawing.Point(161, 11)
-        Me.cmdComanda.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdComanda.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdComanda.Name = "cmdComanda"
         Me.cmdComanda.Size = New System.Drawing.Size(48, 48)
         Me.cmdComanda.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
@@ -182,7 +182,7 @@ Partial Class p_ventas_00
         Me.cmdAnular.Image = CType(resources.GetObject("cmdAnular.Image"), System.Drawing.Image)
         Me.cmdAnular.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
         Me.cmdAnular.Location = New System.Drawing.Point(228, 11)
-        Me.cmdAnular.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdAnular.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdAnular.Name = "cmdAnular"
         Me.cmdAnular.Size = New System.Drawing.Size(48, 49)
         Me.cmdAnular.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -197,7 +197,7 @@ Partial Class p_ventas_00
         Me.cmdNuevo.Image = CType(resources.GetObject("cmdNuevo.Image"), System.Drawing.Image)
         Me.cmdNuevo.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
         Me.cmdNuevo.Location = New System.Drawing.Point(12, 11)
-        Me.cmdNuevo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdNuevo.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdNuevo.Name = "cmdNuevo"
         Me.cmdNuevo.Size = New System.Drawing.Size(48, 47)
         Me.cmdNuevo.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
@@ -211,7 +211,7 @@ Partial Class p_ventas_00
         Me.cmdpago.Image = CType(resources.GetObject("cmdpago.Image"), System.Drawing.Image)
         Me.cmdpago.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
         Me.cmdpago.Location = New System.Drawing.Point(417, 7)
-        Me.cmdpago.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdpago.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdpago.Name = "cmdpago"
         Me.cmdpago.Size = New System.Drawing.Size(84, 50)
         Me.cmdpago.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
@@ -227,7 +227,7 @@ Partial Class p_ventas_00
         Me.cmdCerrar.Image = CType(resources.GetObject("cmdCerrar.Image"), System.Drawing.Image)
         Me.cmdCerrar.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
         Me.cmdCerrar.Location = New System.Drawing.Point(325, 7)
-        Me.cmdCerrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdCerrar.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdCerrar.Name = "cmdCerrar"
         Me.cmdCerrar.Size = New System.Drawing.Size(84, 50)
         Me.cmdCerrar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -242,7 +242,7 @@ Partial Class p_ventas_00
         Me.cmdInicio.Image = CType(resources.GetObject("cmdInicio.Image"), System.Drawing.Image)
         Me.cmdInicio.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
         Me.cmdInicio.Location = New System.Drawing.Point(88, 11)
-        Me.cmdInicio.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdInicio.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdInicio.Name = "cmdInicio"
         Me.cmdInicio.Size = New System.Drawing.Size(48, 48)
         Me.cmdInicio.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -257,10 +257,10 @@ Partial Class p_ventas_00
         Me.GroupBox4.Controls.Add(Me.cmdAtencion)
         Me.GroupBox4.Controls.Add(Me.cmdmozo)
         Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GroupBox4.Location = New System.Drawing.Point(31, 77)
-        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox4.Location = New System.Drawing.Point(31, 78)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox4.Size = New System.Drawing.Size(648, 80)
         Me.GroupBox4.TabIndex = 7477
         Me.GroupBox4.TabStop = False
@@ -276,10 +276,10 @@ Partial Class p_ventas_00
         Me.txtcod_mesa.FocusHighlightEnabled = True
         Me.txtcod_mesa.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtcod_mesa.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.txtcod_mesa.Location = New System.Drawing.Point(548, 15)
-        Me.txtcod_mesa.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtcod_mesa.Location = New System.Drawing.Point(502, 15)
+        Me.txtcod_mesa.Margin = New System.Windows.Forms.Padding(4)
         Me.txtcod_mesa.Name = "txtcod_mesa"
-        Me.txtcod_mesa.Size = New System.Drawing.Size(172, 49)
+        Me.txtcod_mesa.Size = New System.Drawing.Size(138, 49)
         Me.txtcod_mesa.TabIndex = 7454
         Me.txtcod_mesa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.txtcod_mesa.WatermarkText = "MESAS"
@@ -293,7 +293,7 @@ Partial Class p_ventas_00
         Me.cmdPax.Image = Global.sgv_ventas.My.Resources.Resources.pax2
         Me.cmdPax.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
         Me.cmdPax.Location = New System.Drawing.Point(117, 15)
-        Me.cmdPax.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdPax.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdPax.Name = "cmdPax"
         Me.cmdPax.Size = New System.Drawing.Size(77, 58)
         Me.cmdPax.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
@@ -307,7 +307,7 @@ Partial Class p_ventas_00
         Me.cmd_clientes.Image = CType(resources.GetObject("cmd_clientes.Image"), System.Drawing.Image)
         Me.cmd_clientes.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
         Me.cmd_clientes.Location = New System.Drawing.Point(19, 15)
-        Me.cmd_clientes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmd_clientes.Margin = New System.Windows.Forms.Padding(4)
         Me.cmd_clientes.Name = "cmd_clientes"
         Me.cmd_clientes.Size = New System.Drawing.Size(72, 58)
         Me.cmd_clientes.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
@@ -321,10 +321,10 @@ Partial Class p_ventas_00
         Me.cmdAtencion.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
         Me.cmdAtencion.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAtencion.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.cmdAtencion.Location = New System.Drawing.Point(379, 15)
-        Me.cmdAtencion.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdAtencion.Location = New System.Drawing.Point(356, 15)
+        Me.cmdAtencion.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdAtencion.Name = "cmdAtencion"
-        Me.cmdAtencion.Size = New System.Drawing.Size(137, 58)
+        Me.cmdAtencion.Size = New System.Drawing.Size(121, 58)
         Me.cmdAtencion.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
         Me.cmdAtencion.TabIndex = 0
         '
@@ -336,9 +336,9 @@ Partial Class p_ventas_00
         Me.cmdmozo.Font = New System.Drawing.Font("Arial Narrow", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdmozo.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom
         Me.cmdmozo.Location = New System.Drawing.Point(217, 15)
-        Me.cmdmozo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdmozo.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdmozo.Name = "cmdmozo"
-        Me.cmdmozo.Size = New System.Drawing.Size(140, 58)
+        Me.cmdmozo.Size = New System.Drawing.Size(115, 58)
         Me.cmdmozo.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
         Me.cmdmozo.TabIndex = 0
         '
@@ -351,11 +351,11 @@ Partial Class p_ventas_00
         Me.PanelSG.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelSG.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PanelSG.ForeColor = System.Drawing.Color.Black
-        Me.PanelSG.Location = New System.Drawing.Point(687, 77)
-        Me.PanelSG.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PanelSG.Location = New System.Drawing.Point(687, 78)
+        Me.PanelSG.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelSG.Name = "PanelSG"
         Me.PanelSG.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelSG.Size = New System.Drawing.Size(585, 87)
+        Me.PanelSG.Size = New System.Drawing.Size(585, 89)
         Me.PanelSG.TabIndex = 7478
         '
         'TableLayoutPanel2
@@ -366,12 +366,12 @@ Partial Class p_ventas_00
         Me.TableLayoutPanel2.Controls.Add(Me.datapago, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.GroupBox3, 1, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(31, 524)
-        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(31, 534)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(648, 276)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(648, 282)
         Me.TableLayoutPanel2.TabIndex = 7479
         '
         'datapago
@@ -401,7 +401,7 @@ Partial Class p_ventas_00
         Me.datapago.DefaultCellStyle = DataGridViewCellStyle2
         Me.datapago.Dock = System.Windows.Forms.DockStyle.Fill
         Me.datapago.Location = New System.Drawing.Point(4, 4)
-        Me.datapago.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.datapago.Margin = New System.Windows.Forms.Padding(4)
         Me.datapago.Name = "datapago"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
@@ -418,7 +418,7 @@ Partial Class p_ventas_00
         Me.datapago.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.datapago.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.DodgerBlue
         Me.datapago.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datapago.Size = New System.Drawing.Size(407, 268)
+        Me.datapago.Size = New System.Drawing.Size(407, 274)
         Me.datapago.TabIndex = 7449
         '
         'GroupBox3
@@ -427,9 +427,9 @@ Partial Class p_ventas_00
         Me.GroupBox3.Controls.Add(Me.Txtrecibido)
         Me.GroupBox3.Controls.Add(Me.txtTotal)
         Me.GroupBox3.Location = New System.Drawing.Point(419, 4)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox3.Size = New System.Drawing.Size(225, 204)
         Me.GroupBox3.TabIndex = 7450
         Me.GroupBox3.TabStop = False
@@ -442,7 +442,7 @@ Partial Class p_ventas_00
         Me.Txtvuelto.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txtvuelto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Txtvuelto.Location = New System.Drawing.Point(23, 134)
-        Me.Txtvuelto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Txtvuelto.Margin = New System.Windows.Forms.Padding(4)
         Me.Txtvuelto.Name = "Txtvuelto"
         Me.Txtvuelto.Size = New System.Drawing.Size(224, 37)
         Me.Txtvuelto.TabIndex = 4
@@ -456,7 +456,7 @@ Partial Class p_ventas_00
         Me.Txtrecibido.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txtrecibido.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Txtrecibido.Location = New System.Drawing.Point(23, 80)
-        Me.Txtrecibido.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Txtrecibido.Margin = New System.Windows.Forms.Padding(4)
         Me.Txtrecibido.Name = "Txtrecibido"
         Me.Txtrecibido.Size = New System.Drawing.Size(224, 37)
         Me.Txtrecibido.TabIndex = 3
@@ -470,7 +470,7 @@ Partial Class p_ventas_00
         Me.txtTotal.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txtTotal.Location = New System.Drawing.Point(23, 27)
-        Me.txtTotal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTotal.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTotal.Name = "txtTotal"
         Me.txtTotal.Size = New System.Drawing.Size(224, 37)
         Me.txtTotal.TabIndex = 0
@@ -484,12 +484,12 @@ Partial Class p_ventas_00
         Me.TableLayoutPanel4.Controls.Add(Me.PanelG, 0, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.panelitem, 0, 0)
         Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel4.Location = New System.Drawing.Point(687, 172)
-        Me.TableLayoutPanel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel4.Location = New System.Drawing.Point(687, 175)
+        Me.TableLayoutPanel4.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 1
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(585, 344)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(585, 351)
         Me.TableLayoutPanel4.TabIndex = 7482
         '
         'PanelG
@@ -502,10 +502,10 @@ Partial Class p_ventas_00
         Me.PanelG.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PanelG.ForeColor = System.Drawing.Color.Black
         Me.PanelG.Location = New System.Drawing.Point(463, 4)
-        Me.PanelG.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PanelG.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelG.Name = "PanelG"
         Me.PanelG.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelG.Size = New System.Drawing.Size(118, 336)
+        Me.PanelG.Size = New System.Drawing.Size(118, 343)
         Me.PanelG.TabIndex = 7472
         '
         'panelitem
@@ -519,16 +519,16 @@ Partial Class p_ventas_00
         Me.panelitem.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.panelitem.ForeColor = System.Drawing.Color.Black
         Me.panelitem.Location = New System.Drawing.Point(4, 4)
-        Me.panelitem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.panelitem.Margin = New System.Windows.Forms.Padding(4)
         Me.panelitem.Name = "panelitem"
         Me.panelitem.Padding = New System.Windows.Forms.Padding(1)
-        Me.panelitem.Size = New System.Drawing.Size(451, 336)
+        Me.panelitem.Size = New System.Drawing.Size(451, 343)
         Me.panelitem.TabIndex = 7471
         '
         'imgQR
         '
         Me.imgQR.Location = New System.Drawing.Point(5, 5)
-        Me.imgQR.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.imgQR.Margin = New System.Windows.Forms.Padding(4)
         Me.imgQR.Name = "imgQR"
         Me.imgQR.Size = New System.Drawing.Size(164, 85)
         Me.imgQR.TabIndex = 80
@@ -541,8 +541,8 @@ Partial Class p_ventas_00
         Me.tl_panel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.tl_panel.Controls.Add(Me.dataDetalle, 0, 0)
         Me.tl_panel.Controls.Add(Me.pn_clientes, 0, 1)
-        Me.tl_panel.Location = New System.Drawing.Point(31, 172)
-        Me.tl_panel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tl_panel.Location = New System.Drawing.Point(31, 175)
+        Me.tl_panel.Margin = New System.Windows.Forms.Padding(4)
         Me.tl_panel.Name = "tl_panel"
         Me.tl_panel.RowCount = 2
         Me.tl_panel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 229.0!))
@@ -584,7 +584,7 @@ Partial Class p_ventas_00
         Me.dataDetalle.EnableHeadersVisualStyles = False
         Me.dataDetalle.GridColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(215, Byte), Integer), CType(CType(229, Byte), Integer))
         Me.dataDetalle.Location = New System.Drawing.Point(4, 4)
-        Me.dataDetalle.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dataDetalle.Margin = New System.Windows.Forms.Padding(4)
         Me.dataDetalle.Name = "dataDetalle"
         DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
@@ -619,7 +619,7 @@ Partial Class p_ventas_00
         Me.pn_clientes.Controls.Add(Me.cboCliente)
         Me.pn_clientes.Controls.Add(Me.lbltipCambio)
         Me.pn_clientes.Location = New System.Drawing.Point(4, 233)
-        Me.pn_clientes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pn_clientes.Margin = New System.Windows.Forms.Padding(4)
         Me.pn_clientes.Name = "pn_clientes"
         Me.pn_clientes.Size = New System.Drawing.Size(640, 146)
         Me.pn_clientes.TabIndex = 7478
@@ -650,7 +650,7 @@ Partial Class p_ventas_00
         Me.txtObservacion.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtObservacion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txtObservacion.Location = New System.Drawing.Point(17, 155)
-        Me.txtObservacion.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtObservacion.Margin = New System.Windows.Forms.Padding(4)
         Me.txtObservacion.Multiline = True
         Me.txtObservacion.Name = "txtObservacion"
         Me.txtObservacion.Size = New System.Drawing.Size(699, 48)
@@ -670,7 +670,7 @@ Partial Class p_ventas_00
         Me.txtTelefono.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTelefono.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txtTelefono.Location = New System.Drawing.Point(473, 112)
-        Me.txtTelefono.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTelefono.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(243, 27)
         Me.txtTelefono.TabIndex = 4
@@ -688,7 +688,7 @@ Partial Class p_ventas_00
         Me.txtContacto.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtContacto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txtContacto.Location = New System.Drawing.Point(19, 112)
-        Me.txtContacto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtContacto.Margin = New System.Windows.Forms.Padding(4)
         Me.txtContacto.Name = "txtContacto"
         Me.txtContacto.Size = New System.Drawing.Size(447, 27)
         Me.txtContacto.TabIndex = 3
@@ -706,7 +706,7 @@ Partial Class p_ventas_00
         Me.TxtDirfiscal.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtDirfiscal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TxtDirfiscal.Location = New System.Drawing.Point(19, 68)
-        Me.TxtDirfiscal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtDirfiscal.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtDirfiscal.Name = "TxtDirfiscal"
         Me.TxtDirfiscal.Size = New System.Drawing.Size(697, 27)
         Me.TxtDirfiscal.TabIndex = 2
@@ -724,7 +724,7 @@ Partial Class p_ventas_00
         Me.txtRuc.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRuc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txtRuc.Location = New System.Drawing.Point(473, 26)
-        Me.txtRuc.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtRuc.Margin = New System.Windows.Forms.Padding(4)
         Me.txtRuc.Name = "txtRuc"
         Me.txtRuc.Size = New System.Drawing.Size(243, 27)
         Me.txtRuc.TabIndex = 1
@@ -739,7 +739,7 @@ Partial Class p_ventas_00
         Me.cboCliente.FormattingEnabled = True
         Me.cboCliente.ItemHeight = 19
         Me.cboCliente.Location = New System.Drawing.Point(19, 26)
-        Me.cboCliente.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboCliente.Margin = New System.Windows.Forms.Padding(4)
         Me.cboCliente.Name = "cboCliente"
         Me.cboCliente.Size = New System.Drawing.Size(445, 27)
         Me.cboCliente.TabIndex = 0
@@ -768,8 +768,8 @@ Partial Class p_ventas_00
         Me.TableLayoutPanel3.Controls.Add(Me.GroupBox5, 0, 1)
         Me.TableLayoutPanel3.Controls.Add(Me.panel_pagos, 0, 2)
         Me.TableLayoutPanel3.Controls.Add(Me.txtinput, 0, 0)
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(687, 524)
-        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(687, 534)
+        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 4
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47.0!))
@@ -790,9 +790,9 @@ Partial Class p_ventas_00
         Me.GroupBox5.Controls.Add(Me.cmdGrabar)
         Me.GroupBox5.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupBox5.Location = New System.Drawing.Point(4, 51)
-        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox5.Size = New System.Drawing.Size(1107, 95)
         Me.GroupBox5.TabIndex = 7482
         Me.GroupBox5.TabStop = False
@@ -805,7 +805,7 @@ Partial Class p_ventas_00
         Me.ButtonX2.Image = CType(resources.GetObject("ButtonX2.Image"), System.Drawing.Image)
         Me.ButtonX2.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
         Me.ButtonX2.Location = New System.Drawing.Point(524, 5)
-        Me.ButtonX2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonX2.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonX2.Name = "ButtonX2"
         Me.ButtonX2.Size = New System.Drawing.Size(96, 86)
         Me.ButtonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
@@ -821,7 +821,7 @@ Partial Class p_ventas_00
         Me.ButtonX4.Image = CType(resources.GetObject("ButtonX4.Image"), System.Drawing.Image)
         Me.ButtonX4.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
         Me.ButtonX4.Location = New System.Drawing.Point(420, 5)
-        Me.ButtonX4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonX4.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonX4.Name = "ButtonX4"
         Me.ButtonX4.Size = New System.Drawing.Size(72, 70)
         Me.ButtonX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
@@ -837,7 +837,7 @@ Partial Class p_ventas_00
         Me.ButtonX1.Image = CType(resources.GetObject("ButtonX1.Image"), System.Drawing.Image)
         Me.ButtonX1.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
         Me.ButtonX1.Location = New System.Drawing.Point(217, 5)
-        Me.ButtonX1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonX1.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonX1.Name = "ButtonX1"
         Me.ButtonX1.Size = New System.Drawing.Size(72, 70)
         Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
@@ -851,7 +851,7 @@ Partial Class p_ventas_00
         Me.ButtonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
         Me.ButtonX3.Image = CType(resources.GetObject("ButtonX3.Image"), System.Drawing.Image)
         Me.ButtonX3.Location = New System.Drawing.Point(8, 5)
-        Me.ButtonX3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonX3.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonX3.Name = "ButtonX3"
         Me.ButtonX3.Size = New System.Drawing.Size(73, 70)
         Me.ButtonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
@@ -866,7 +866,7 @@ Partial Class p_ventas_00
         Me.ButtonX7.Image = CType(resources.GetObject("ButtonX7.Image"), System.Drawing.Image)
         Me.ButtonX7.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
         Me.ButtonX7.Location = New System.Drawing.Point(113, 5)
-        Me.ButtonX7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonX7.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonX7.Name = "ButtonX7"
         Me.ButtonX7.Size = New System.Drawing.Size(72, 70)
         Me.ButtonX7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -880,7 +880,7 @@ Partial Class p_ventas_00
         Me.cmdGrabar.Image = CType(resources.GetObject("cmdGrabar.Image"), System.Drawing.Image)
         Me.cmdGrabar.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
         Me.cmdGrabar.Location = New System.Drawing.Point(321, 5)
-        Me.cmdGrabar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdGrabar.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdGrabar.Name = "cmdGrabar"
         Me.cmdGrabar.Size = New System.Drawing.Size(91, 85)
         Me.cmdGrabar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -890,7 +890,7 @@ Partial Class p_ventas_00
         'panel_pagos
         '
         Me.panel_pagos.Location = New System.Drawing.Point(4, 154)
-        Me.panel_pagos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.panel_pagos.Margin = New System.Windows.Forms.Padding(4)
         Me.panel_pagos.Name = "panel_pagos"
         Me.panel_pagos.Size = New System.Drawing.Size(680, 110)
         Me.panel_pagos.TabIndex = 7483
@@ -910,7 +910,7 @@ Partial Class p_ventas_00
         Me.txtinput.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtinput.ForeColor = System.Drawing.Color.Navy
         Me.txtinput.Location = New System.Drawing.Point(4, 4)
-        Me.txtinput.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtinput.Margin = New System.Windows.Forms.Padding(4)
         Me.txtinput.MaxLength = 30
         Me.txtinput.Multiline = True
         Me.txtinput.Name = "txtinput"
@@ -923,9 +923,9 @@ Partial Class p_ventas_00
         Me.GroupBox2.Controls.Add(Me.txtSerDocumento)
         Me.GroupBox2.Controls.Add(Me.txtNroDocumento)
         Me.GroupBox2.Location = New System.Drawing.Point(31, 4)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Size = New System.Drawing.Size(565, 46)
         Me.GroupBox2.TabIndex = 7480
         Me.GroupBox2.TabStop = False
@@ -941,7 +941,7 @@ Partial Class p_ventas_00
         Me.cboDocumento.FormattingEnabled = True
         Me.cboDocumento.ItemHeight = 21
         Me.cboDocumento.Location = New System.Drawing.Point(9, 11)
-        Me.cboDocumento.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboDocumento.Margin = New System.Windows.Forms.Padding(4)
         Me.cboDocumento.Name = "cboDocumento"
         Me.cboDocumento.Size = New System.Drawing.Size(199, 27)
         Me.cboDocumento.TabIndex = 3
@@ -954,7 +954,7 @@ Partial Class p_ventas_00
         Me.txtSerDocumento.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSerDocumento.ForeColor = System.Drawing.Color.DarkRed
         Me.txtSerDocumento.Location = New System.Drawing.Point(217, 11)
-        Me.txtSerDocumento.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtSerDocumento.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSerDocumento.Name = "txtSerDocumento"
         Me.txtSerDocumento.Size = New System.Drawing.Size(75, 27)
         Me.txtSerDocumento.TabIndex = 4
@@ -966,7 +966,7 @@ Partial Class p_ventas_00
         Me.txtNroDocumento.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNroDocumento.ForeColor = System.Drawing.Color.DarkRed
         Me.txtNroDocumento.Location = New System.Drawing.Point(301, 11)
-        Me.txtNroDocumento.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNroDocumento.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNroDocumento.Name = "txtNroDocumento"
         Me.txtNroDocumento.Size = New System.Drawing.Size(167, 27)
         Me.txtNroDocumento.TabIndex = 5
@@ -975,10 +975,10 @@ Partial Class p_ventas_00
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(1290, 804)
+        Me.ClientSize = New System.Drawing.Size(1290, 820)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.DoubleBuffered = True
-        Me.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Margin = New System.Windows.Forms.Padding(5)
         Me.Name = "p_ventas_00"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
