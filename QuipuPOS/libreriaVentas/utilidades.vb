@@ -110,8 +110,8 @@ Public Class utilidades
         Dim cad, cad0, cad1, cad2, cad3, cad4 As String
         cad0 = " select concat('--',d.nom_doc,' DE VENTA ELECTRONICA--'),concat(ser_doc,'-',nro_doc) as documento,nro_maquina,cast(fec_doc as date) as fecha,DATE_FORMAT(fecha, '%H:%i:%s') as hora, monto-(monto_igv) as subtotal,monto_igv,monto,v.nom_vend,"
         cad1 = " f.nom_fpago,imp_pagado,imp_vuelto,c.cod_clie,if( anul=1,obs,if(c.cod_clie='',s.contacto,c.raz_soc)) as raz_soc,ope_ped,fono_clie,dir_clie,nom_cont,dsc_recurso"
-        cad2 = " from factura s inner join documento_s d on d.cod_docsunat=s.cod_doc inner join vendedor v on s.cod_vend=v.cod_vend"
-        cad3 = " inner join cliente c on c.cod_clie=s.cod_clie inner join tipo_recurso tr on tr.cod_recurso=s.cod_atencion"
+        cad2 = " from factura s inner join documento_s d on d.cod_docsunat=s.cod_doc left join vendedor v on s.cod_vend=v.cod_vend"
+        cad3 = " left join cliente c on c.cod_clie=s.cod_clie left join tipo_recurso tr on tr.cod_recurso=s.cod_atencion"
         cad4 = " left join factura_detpago sp on sp.operacion=s.operacion left join forma_pago f on f.cod_fpago=sp.cod_fpago where s.operacion= " & operacion
         cad = cad0 + cad1 + cad2 + cad3 + cad4
         Dim com As New MySqlCommand(cad)
