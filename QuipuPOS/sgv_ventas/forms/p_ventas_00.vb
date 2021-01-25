@@ -62,6 +62,9 @@ Public Class p_ventas_00
     Private tamanoAncho As Integer = 70
 
     Private nroPtoVetaDocRef As String = ""
+
+    Private ClienteVarios As String = "CLIENTE VARIOS"
+    Private CodigoClienteVarios As String = "00000000000"
     '0=Precuenta,1=ticket,2=comanda
 
     Private Sub cmdCerrar_Click(sender As System.Object, e As System.EventArgs) Handles cmdCerrar.Click
@@ -792,7 +795,7 @@ Public Class p_ventas_00
         Dim Imag As Byte() = Nothing
         If codigo = "" Then
             lcodvendedor = pCuentaUser
-            lcodAtencion = ""
+            lcodAtencion = "8104"
             cmdmozo.Text = ""
             cmdAtencion.Text = "SALON"
             cmdmozo.Image = Bytes_Imagen(Imag)
@@ -1305,6 +1308,10 @@ Public Class p_ventas_00
         fec_doc = pFechaSystem
         fcod_clie = txtRuc.Text
         nom_cliente = cboCliente.Text
+        If (fcod_clie.Trim.Length = 0 And nom_cliente.Trim.Length = 0) Then
+            fcod_clie = CodigoClienteVarios
+            nom_cliente = ClienteVarios
+        End If
         fcod_vend = IIf(lcodvendedor = "", pCuentaUser, lcodvendedor)
         cod_fpago = datapago("cod_pago", 0).Value
         cod_mesa = txtcod_mesa.Text
@@ -1341,7 +1348,7 @@ Public Class p_ventas_00
             'mfactura.insertar_aux(nroOperacion, nropedido, cod_doc, ser_doc, nro_doc, fec_doc, fcod_vend, fcod_clie, "01", lcancelado, inc_igv, pDecimales, cod_alma, "0000", txtObservacion.Text, pEmpresa, pCuentaUser, 
             '0, IIf(cod_doc = "99", "99", "12"), cod_mesa, lcodAtencion, txtContacto.Text, 0)
             mfactura.insertar_factura(nroOperacion, 0, Strings.Right(cod_doc, 2), ser_doc, nro_doc, fec_doc, fec_doc, fec_doc,
-                                         "00000000", fcod_clie, "01", lcancelado, inc_igv, pDecimales, cod_alma, "0000", txtObservacion.Text, pEmpresa, pCuentaUser,
+                                         pCuentaUser, fcod_clie, "01", lcancelado, inc_igv, pDecimales, cod_alma, "0000", txtObservacion.Text, pEmpresa, pCuentaUser,
                                          nro_ptovta, 0, ctipdoc_ref, cserdoc_ref, cNumdoc_ref, cod_mesa, lcodAtencion, txtContacto.Text, 3.352)
 
             tm = pMonedaAbr
@@ -2145,34 +2152,42 @@ Public Class p_ventas_00
 
 
         'Datos del delivery
-        sb = New System.Text.StringBuilder
-        sb.AppendFormat("{0} ", ajustar(": " & mitabla.Rows(0)(18).ToString, 30, HorizontalAlignment.Left))
-        e.Graphics.DrawString(sb.ToString, prFont, Brushes.Black, leftmargin + 10, yPos)
-        yPos += (lineHeight * 2)
+        midato = CType(IIf(IsDBNull(mitabla.Rows(0)(18)), "", mitabla.Rows(0)(18)), String)
+        If (midato = "DELIVERY") Then
 
+            'midato = mitabla.Rows(0)(18)
+            If midato.Length > 0 Then
+                sb = New System.Text.StringBuilder
+                sb.AppendFormat("{0} ", ajustar(": " & mitabla.Rows(0)(18).ToString, 30, HorizontalAlignment.Left))
+                e.Graphics.DrawString(sb.ToString, prFont, Brushes.Black, leftmargin + 10, yPos)
+                yPos += (lineHeight * 2)
+            End If
 
-        midato = mitabla.Rows(0)(15)
-        If midato.Length > 0 Then
-            sb = New System.Text.StringBuilder
-            sb.AppendFormat("{0} ", ajustar(": " & midato.ToString, 30, HorizontalAlignment.Left))
-            e.Graphics.DrawString(sb.ToString, prFont, Brushes.Black, leftmargin + 10, yPos)
-            yPos += (lineHeight * 2)
-        End If
+            'Celular
+            midato = mitabla.Rows(0)(15)
+            If midato.Length > 0 Then
+                sb = New System.Text.StringBuilder
+                sb.AppendFormat("{0} ", ajustar(": " & midato.ToString, 30, HorizontalAlignment.Left))
+                e.Graphics.DrawString(sb.ToString, prFont, Brushes.Black, leftmargin + 10, yPos)
+                yPos += (lineHeight * 2)
+            End If
+            'Direccion
+            midato = mitabla.Rows(0)(16)
+            If midato.Length > 0 Then
+                sb = New System.Text.StringBuilder
+                sb.AppendFormat("{0} ", ajustar(": " & midato.ToString, 30, HorizontalAlignment.Left))
+                e.Graphics.DrawString(sb.ToString, prFont, Brushes.Black, leftmargin + 10, yPos)
+                yPos += (lineHeight * 2)
+            End If
+            'Nombre del contacto
+            midato = mitabla.Rows(0)(17)
+            If midato.Length > 0 Then
+                sb = New System.Text.StringBuilder
+                sb.AppendFormat("{0} ", ajustar(": " & midato.ToString, 30, HorizontalAlignment.Left))
+                e.Graphics.DrawString(sb.ToString, prFont, Brushes.Black, leftmargin + 10, yPos)
+                yPos += (lineHeight * 2)
+            End If
 
-        midato = mitabla.Rows(0)(16)
-        If midato.Length > 0 Then
-            sb = New System.Text.StringBuilder
-            sb.AppendFormat("{0} ", ajustar(": " & midato.ToString, 30, HorizontalAlignment.Left))
-            e.Graphics.DrawString(sb.ToString, prFont, Brushes.Black, leftmargin + 10, yPos)
-            yPos += (lineHeight * 2)
-        End If
-
-        midato = mitabla.Rows(0)(17)
-        If midato.Length > 0 Then
-            sb = New System.Text.StringBuilder
-            sb.AppendFormat("{0} ", ajustar(": " & midato.ToString, 30, HorizontalAlignment.Left))
-            e.Graphics.DrawString(sb.ToString, prFont, Brushes.Black, leftmargin + 10, yPos)
-            yPos += (lineHeight * 2)
         End If
 
 
